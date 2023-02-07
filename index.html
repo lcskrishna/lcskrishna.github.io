@@ -1,59 +1,238 @@
+<!-- -----------------@Author: Chaitanya Sri Krishna Lolla ------------------  -->
 <!DOCTYPE html>
-    <head>
-        <meta charset = "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Chaitanya Sri Krishna Lolla</title>
-    
-        <!-- #4A90E2, #31D24B #31D2A2 #46B5F6 #085D8E 386C21-->
-		<!-- https://cdn-images-1.medium.com/max/1200/1*7ya5U1T8npAnRM8xnxOJgQ.jpeg -->
-		<!-- https://avatars0.githubusercontent.com/u/6920620?s=400&v=4 -->
-
-        <style>
-            .index-top {
-                background-color : #4A90E2 ; 
-                padding : 35px ;
-                bottom : 15px ;
-                text-align : center ;
-                display : block;
-                height : 60%;
-                left : 30% ;
-                right : 30% ;
-				color : black;
-            }
-		
-			img {
-				border-radius : 90%
-			}
-			
-			.index-bottom-portfolio {
-				background-color : gray;
-				color : black;
-				padding : 35px;
-				bottom : 15px;
-				text-align : center ;
-			}
-
-        </style>
-
-    </head>
-
-    <body>
-        <div class="index-top">
-            <div id="profile-pic"> 
-                <img src = "https://avatars0.githubusercontent.com/u/6920620?s=400&v=4" height = 224 width= 224> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fe97d0ef95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+              <img src="images/logo-2.png" class="logo">
+              <ul id="sidemenu">
+                <li><a href="#header"> Home </a> </li>
+                <li><a href="#about"> About </a> </li>
+                <li><a href="#services"> Services </a> </li>
+                <li><a href="#portfolio"> Portfolio </a> </li>
+                <li><a href="#contact"> Contact </a> </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+              </ul>
+              <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+              <p> Deep Learning/AI Software Engineer </p>
+              <h3> Hi, I'm <span> Chaitanya Sri Krishna </span> Lolla  </h3>
+              <p class="header-text-1"> Thank you for taking time to go over my profile.
+                During my free time, I am currently working on few interesting problems that AI can solve problems in sports and medical fields.
+                If you want to know more or are interested to colloborate on some cool things, feel free to reach out to me.
+               </p>
             </div>
-			
-			 <div id="index-about"> 
-				<h1> Chaitanya Sri Krishna Lolla </h1>
-				<!-- <h3> Computer Science Enthusiast </h3> -->
-			 </div>
         </div>
-		
-		<div class="index-bottom">
-			<div class="index-bottom-portfolio"> 
-				<center> <h3> Projects </h3> </center>
-			</div>
-	    </div>
-    </body>
+    </div>
+<!---ABOUT --->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user-1.jpg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title"> About Me </h1>
+            <p> A computer science enthusiast  by passion looking for a gateway to deeper knowledge.
+                Zeal to learn and have a broad perspective on every detail. That's the reason for my diversified projects.
+                Have a deeper understanding on the overall source code of PyTorch and Caffe2.
+                My areas of interest include: Deep Learning, Traditional Machine Learnining, High Performance Computing and Computer Vision.
+            </p>
 
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('experience')"> Experience </p>
+                <p class="tab-links" onclick="opentab('skills')"> Skills </p>
+                <p class="tab-links" onclick="opentab('education')"> Education </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="experience">
+              <ul>
+                <li> <span> 2021-2022 </span><br> AI Software Architect at Intel Corporation</li>
+                <li> <span> 2018-2020 </span> <br>Staff Software Engineer at AMD</li>
+                <li> <span> 2017 June - 2017 Aug </span> <br> Intern/Co-op Engineer at AMD </li>
+                <li> <span> 2016-2017 </span> <br> Research Assistant at VIA Lab, UNCC</li>
+                <li> <span> 2014-2016 </span> <br> Systems Engineer at Tata Consultancy Services (Ericsson) </li>
+                <li> <span> Dec 2012-Feb 2013 </span> <br> Intern (Industrial Project) at Bharat Dynamics Limited </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li> <span> Deep Learning </span><br> Buiding various Deep Learning Pipelines</li>
+                <li> <span> Machine Learning </span> <br> Building Models using Traditional ML and Neural Networks(Deep Learning techniques)</li>
+                <li> <span> High Performance Computing</span> <br> Develop optimized high performance code on GPUs using OpenCL/CUDA/HIP </li>
+                <li> <span> Computer Vision </span> <br> Traditional CV applications using OpenCV/OpenVX. </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li> <span> 2016-2017 </span>
+                  <br> <span> Masters in Computer Science at University of North Carolina at Charlotte, Charlotte, United States. </span>
+                  <br> Specialized in Deep Learning and Computer Vision (Intelligent Systems)</li>
+                <li> <span> 2010-2014 </span>
+                  <br> <span> Bachelors in Electronics and Communication Engineering </span>
+                  <br> CVR College of Engineering, Hyderabad, India</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!--  ------ services ------ -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title"> My Services </h1>
+      <div class="services-list">
+        <div>
+            <i class="fa-sharp fa-solid fa-cubes"></i>
+            <h2> Deep Learning</h2>
+            <p> Passionate about building various pipelines of Deep Learning to get the best possible efficiency.</p>
+            <a href="#"> Learn more </a>
+        </div>
+        <div>
+            <i class="fa-solid fa-microchip"></i>
+            <h2> High Performance computing or Parallel programming. </h2>
+            <p> Have any kernels that needs to be optimized on your hardware? I do develop some high performance software on GPUs.</p>
+            <a href="#"> Learn more </a>
+        </div>
+        <div>
+            <i class="fa-brands fa-uncharted"></i>
+            <h2> Help building any products?</h2>
+            <p> Passionate about building products that help the economy. Looking for a co-founder? You are in the right place. </p>
+            <a href="#"> Learn more </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- --------- portfolio ---------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title"> My Work </h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work_1.avif">
+          <div class="layer">
+            <h3> Github</h3>
+            <p> More details about each individual project will be updated soon.
+              Kindly go over my github profile for some details about my projects or work. </p>
+            <a href="https://github.com/lcskrishna"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/publication.jpg">
+          <div class="layer">
+            <h3> Publications </h3>
+            <p> Some research work I have contributed. </p>
+            <a href="https://scholar.google.com/citations?hl=en&user=FQJgWYUAAAAJ&view_op=list_works&gmla=AJsN-F6NqnC2HZjl9WCHWO32Y_raqvOUFRkyJJjH3R9AAQ63B6GdgrnWFu0guzG2R2gDfRWEPyDId4N07otcryhJapzJluJqUKD2ids_zLK1_TDCMS3Q2JA">
+              <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+        <!--
+        <div class="work">
+          <img src="images/work-2.png">
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+        </div> -->
+        <!-- <a href="#" class="btn"> See More </a> -->
+      </div>
+    </div>
+
+  </div>
+
+<!-- -----------Contact ------------ -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title"> Contact Me </h1>
+        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>lollachaitanya@gmail.com </p>
+        <div class="social-icons">
+          <a href="https://twitter.com/chaitan15444482"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/chaitanyasrikrishna/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://medium.com/@lollachaitanya"><i class="fa-brands fa-medium"></i></a>
+        </div>
+        <a href="" download class="btn btn2"> Download CV </a>
+      </div>
+
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"> </textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-250px";
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz70aCfRI2AJhcIeWHKdXlBtONhjj9mrlkdI7Ow5JkxvNqc_IBs9i14plSIS1Hgb_CI/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Message sent successfully."
+          setTimeout(function(){
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
 </html>
